@@ -1,0 +1,12 @@
+﻿global using static Finance.Extensions.ContextData;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using Finance.Interfaces;
+global using Finance.Models;
+global using Finance.Pages;
+global using System.Collections.ObjectModel;
+global using Finance.ViewModels;
+global using CommunityToolkit.Mvvm.Messaging.Messages;
+global using Finance.Extensions;
+global using Finance.Services;
+global using CommunityToolkit.Maui;
