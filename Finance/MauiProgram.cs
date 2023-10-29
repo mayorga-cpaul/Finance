@@ -9,6 +9,9 @@ namespace Finance
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UsePages()
+                .UseViewModels()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

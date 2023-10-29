@@ -10,7 +10,8 @@
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="Bold" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="WidthRequest" Value="160" />
+                <Setter Property="WidthRequest" Value="280"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="Margin" Value="36, 48, 0, 0" />
             </Style>
 
@@ -57,7 +58,9 @@
                         <Ellipse
                             Fill="{StaticResource SearchBackgroundColor}"/>
                         <Image
-                            Source="dotnet_bot.png"/>
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            Source="search_interface_symbol.png"/>
                     </Grid>
 
                     <!-- SUGGESTED EQUATIONS -->
@@ -80,6 +83,7 @@
                 <BoxView
                     Style="{StaticResource RecentChatAdornerStyle}"/>
                 <CollectionView
+                    ItemsSource="{Binding Topics}"
                     Style="{StaticResource RecentChatCollectionStyle}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>

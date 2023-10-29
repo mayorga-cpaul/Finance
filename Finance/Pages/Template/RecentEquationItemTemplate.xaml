@@ -64,10 +64,10 @@
             <Grid
                 Style="{StaticResource RecentImageContainerStyle}">
                 <Ellipse
-                    Fill="{Binding Sender.Color}"
+                    Fill="{Binding Color}"
                     Style="{StaticResource RecentEllipseStyle}"/>
                 <Image
-                    Source="{Binding Sender.Image}"
+                    Source="{Binding Image}"
                     Style="{StaticResource RecentImageStyle}"/>
             </Grid>
             <Grid
@@ -75,16 +75,16 @@
                 ColumnDefinitions="*, Auto">
                 <StackLayout>
                     <Label        
-                        Text="{Binding Sender.Name}"
+                        Text="{Binding Name}"
                         Style="{StaticResource NameTextStyle}"/>
                     <Label         
-                        Text="{Binding Text}"
+                        Text="{Binding Description}"
                         Style="{StaticResource MessageTextStyle}"/>
                 </StackLayout>
                 <Label 
                     Grid.Column="1"
                     Text="String.Emtpy"
-                    Style="{StaticResource TimeTextStyle}"/>
+                    Style="{StaticResource ReadTime}"/>
             </Grid>
         </Grid>
     </ContentView.Content>
