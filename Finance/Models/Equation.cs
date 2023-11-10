@@ -10,4 +10,7 @@ public partial class Equation : ObservableObject
 
     [ObservableProperty]
     private string _image;
+
+    [ObservableProperty]
+    private Color _color;
 }

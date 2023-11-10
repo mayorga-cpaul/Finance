@@ -13,4 +13,7 @@ public partial class Topic : ObservableObject
 
     [ObservableProperty]
     private string _readTime;
+
+    [ObservableProperty]
+    private Color _color;
 }
